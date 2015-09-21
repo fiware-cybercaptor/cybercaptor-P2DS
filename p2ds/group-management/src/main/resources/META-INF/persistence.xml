@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence">
+    <persistence-unit name="p2ds-group-management" transaction-type="RESOURCE_LOCAL">
+        <provider>
+            org.hibernate.ejb.HibernatePersistence
+        </provider>
+        <class>ch.zhaw.ficore.p2ds.group.storage.Group</class>
+		<class>ch.zhaw.ficore.p2ds.group.storage.Peer</class>
+		<class>ch.zhaw.ficore.p2ds.group.storage.Registration</class>
+        <properties>
+			 <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+	            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/p2ds?user=sepia&amp;password=8M07r8FlZZ"/>
+	            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+	            <property name="hibernate.hbm2ddl.auto" value="create"/>
+	            <property name="hibernate.show_sql" value="true"/>
+	            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+

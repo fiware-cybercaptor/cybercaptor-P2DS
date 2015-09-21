@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright 2015 Zürcher Hochschule der Angewandten Wissenschaften
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>ch.zhaw.ficore.p2ds</groupId>
+  <artifactId>p2ds-peer</artifactId>
+  <packaging>war</packaging>
+  <version>4.4.3</version>
+  <name>p2ds-peer</name>
+
+  <parent>
+    <groupId>org.fiware</groupId>
+    <artifactId>p2ds</artifactId>
+    <version>4.4.3</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  
+  <build>
+    <finalName>p2ds-peer</finalName>
+	<plugins>
+		<plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>exec-maven-plugin</artifactId>
+			<version>1.2.1</version>
+			<configuration>	
+				<mainClass>ch.zhaw.ficore.p2ds.peer.Launcher</mainClass>
+				<arguments>
+				<argument>argument1</argument>
+				</arguments>
+			</configuration>
+		</plugin>
+	</plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>ch.zhaw.ficore.p2ds</groupId>
+      <artifactId>p2ds-components</artifactId>
+      <version>4.4.3</version>
+    </dependency>
+
+	<!-- Hibernate -->
+    <dependency>
+      <groupId>org.hibernate.javax.persistence</groupId>
+      <artifactId>hibernate-jpa-2.0-api</artifactId>
+      <version>1.0.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>4.0.1.Final</version>
+    </dependency>
+	<dependency>
+    	<groupId>org.hibernate</groupId>
+    	<artifactId>hibernate-validator</artifactId>
+    	<version>4.3.1.Final</version>
+	</dependency>
+	
+	    <!-- MySQL -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.6</version>
+    </dependency>
+	
+	
+  </dependencies>
+  
+</project>

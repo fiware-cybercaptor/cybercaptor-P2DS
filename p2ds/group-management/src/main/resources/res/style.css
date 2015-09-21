@@ -1,0 +1,79 @@
+html { 
+	font-family: arial, sans-serif;
+}
+
+.mainDiv {
+	width: 75%;
+	margin: auto;
+	padding-left: 1em;
+}
+
+.groupDiv {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.groupDivSub {
+	padding-left: 1em;
+	display: none;
+}
+
+.peerDiv {
+	font-size: 0.95em;
+	font-weight: normal;
+	border-top: 0.2em solid #789FBD;
+	border-bottom: 0.2em solid #789FBD;
+	background-color: #95CDF8;
+	overflow: auto;
+	margin-bottom: 1.1em;
+	padding: 1em;
+	margin-left: 1.5em;
+}
+
+.configDiv {
+	background-color: #FFCCCC;
+	padding: 1em;
+	border-top: 0.2em solid #DDAAAA;
+	border-bottom: 0.2em solid #DDAAAA;
+	margin-left: 1.5em;
+    display: none;
+}
+
+.memberDiv { display: none; }
+
+.statusDiv, .regDiv {
+	background-color: #FFCCCC;
+	padding: 1em;
+	border-top: 0.2em solid #DDAAAA;
+	border-bottom: 0.2em solid #DDAAAA;
+	margin-left: 1.5em;
+}
+
+.toggle { cursor: grab; }
+.toggle:hover { text-decoration: underline; }
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+h5 {
+	font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5 {
+	padding-top: 0.1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
