@@ -58,14 +58,11 @@ Installing from Source
 In order to build and compile the services from source code, first get
 the ZHAW modification of SEPIA::
 
-  git clone https://github.engineering.zhaw.ch/neut/sepia.git
+  git clone https://github.com/fiware-cybercaptor/cybercaptor-P2DS.git
   cd sepia
   mvn install -DskipTests
   cd ..
 
-Next, get the services::
-
-  git clone https://github.engineering.zhaw.ch/neut/p2ds.git
   cd p2ds
   mvn package
 

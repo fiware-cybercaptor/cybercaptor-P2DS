@@ -34,7 +34,7 @@ RUN set -x \
 
 EXPOSE 8080
 
-ENV P2DS_PEER_URL https://github.engineering.zhaw.ch/neut/p2ds/raw/master/Release/p2ds-peer.war
+ENV P2DS_PEER_URL https://github.com/fiware-cybercaptor/cybercaptor-P2DS/raw/master/p2ds/Release/p2ds-peer.war
 
 # Now install p2ds peer WAR file
 RUN curl -fSL "$P2DS_PEER_URL" -o webapps/p2ds-peer.war

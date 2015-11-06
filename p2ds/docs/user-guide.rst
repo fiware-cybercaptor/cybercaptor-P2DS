@@ -216,7 +216,7 @@ Please refer to the `API
 Documentation <http://docs.p2dsgroupmanager.apiary.io/#>`__. Exemplary
 usage of the APIs can be found in the file ``grp.sh`` in the source
 code's main directory, available from `the github
-page <https://github.engineering.zhaw.ch/neut/p2ds.git>`__.
+page <https://github.com/fiware-cybercaptor/cybercaptor-P2DS>`__.
 
 Here is a more verbose version of that file (with some parts skipped to
 keep this guide shorter). We assume that the admin key is
