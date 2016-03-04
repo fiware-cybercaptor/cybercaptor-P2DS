@@ -1,3 +1,8 @@
+[![License badge](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Documentation badge](https://img.shields.io/badge/docs-latest-green.svg)](http://cybercaptor.readthedocs.org/projects/cybercaptor-p2ds/en/latest/)
+[![Docker badge](https://img.shields.io/badge/docker-latest-blue.svg)](https://github.com/fiware-cybercaptor/cybercaptor-P2DS/tree/master/p2ds/docker)
+[![Support badge]( https://img.shields.io/badge/support-issues-yellowgreen.svg)](https://github.com/fiware-cybercaptor/cybercaptor-P2DS/issues)
+
 P2DS
 ====
 
